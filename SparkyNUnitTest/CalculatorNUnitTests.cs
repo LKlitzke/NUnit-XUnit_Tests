@@ -1,11 +1,12 @@
 ﻿using NUnit.Framework;
+using Sparky;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sparky
+namespace SparkyNUnitTest
 {
     [TestFixture]
     public class CalculatorNUnitTests
@@ -64,7 +65,7 @@ namespace Sparky
         }
 
         [Test]
-        [TestCase(10,ExpectedResult = false)]
+        [TestCase(10, ExpectedResult = false)]
         [TestCase(11, ExpectedResult = true)]
         public bool IsOddChecker_InputNumber_ReturnTrueIfOdd(int a)
         {
@@ -73,7 +74,7 @@ namespace Sparky
         }
 
         [Test]
-        [TestCase(5.4,10.5)]
+        [TestCase(5.4, 10.5)]
         [TestCase(12.32, 11.53)]
         [TestCase(9.0522, 0.0032)]
         public void AddNumbersDouble_InputTwoDouble_GetCorrectAddition(double a, double b)
@@ -86,7 +87,7 @@ namespace Sparky
 
             // Assert
             // Delta = aproximação de valor
-            Assert.AreEqual(15.9, result,10);
+            Assert.AreEqual(15.9, result, 10);
 
         }
 
@@ -101,7 +102,7 @@ namespace Sparky
 
             // Assert
             Assert.That(result, Is.EquivalentTo(expectedRange));
-            Assert.AreEqual(result,expectedRange);
+            Assert.AreEqual(result, expectedRange);
 
             Assert.Contains(7, result);
             Assert.That(result, Does.Contain(7));
