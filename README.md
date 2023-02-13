@@ -2,7 +2,7 @@
 
 ## 💻 Projeto
 
-Solução de testes unitários utilizando NUnit, XUnit e MOQ em .NET 6 como forma de aprendizado do curso de Complete Guide to Unit Testing in .NET Core - Bhrugen Patel
+Solução de testes unitários utilizando NUnit, XUnit e MOQ em .NET 6 como forma de aprendizado do curso de Complete Guide to Unit Testing in .NET Core - Bhrugen Patel. O projeto conta com um total de 101 testes unitários que cobrem diversos contextos em aplicações de console simples e em camadas Core, Models, DataAccess e WebView do projeto Bongo (Study Room Booking).
 
 
 ## ⚙️ Tecnologias
